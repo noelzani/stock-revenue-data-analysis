@@ -87,6 +87,6 @@ Revenue Data and Building a Dashboard.ipynb
 
 Run the notebook cells in order to reproduce the analysis and visualizations.
 
-## 🎓 Course
+##  Course
 
 This project was completed as part of the **IBM Data Science Professional Certificate** on Coursera.
