@@ -1,79 +1,92 @@
-Stock and Revenue Data Analysis Dashboard
+#  Stock and Revenue Data Analysis Dashboard
 
-Overview
+##  Overview
 
-This project analyzes historical stock prices and company revenue data for Tesla (TSLA) and GameStop (GME). It was completed as part of the IBM Data Science Professional Certificate.
+This project analyzes historical **stock prices** and **company revenue data** for **Tesla (TSLA)** and **GameStop (GME)**.
 
-The project combines stock-market data retrieved with Python and revenue data collected through web scraping. The resulting datasets are cleaned and visualized to compare historical share prices with company revenue trends.
+It was completed as part of the **IBM Data Science Professional Certificate** and demonstrates the use of Python for data extraction, web scraping, data cleaning, and visualization.
 
-Project Objectives
+The project combines historical stock-market data retrieved using `yfinance` with revenue data collected through web scraping. The resulting datasets are processed and visualized to examine stock price and revenue trends over time.
 
-Retrieve historical Tesla and GameStop stock data using yfinance
+##  Project Objectives
 
-Extract historical revenue data through web scraping
+- Retrieve historical Tesla and GameStop stock data using `yfinance`
+- Extract historical company revenue data using web scraping
+- Clean and prepare datasets using `pandas`
+- Explore historical stock and revenue data
+- Create visualizations comparing stock prices and revenue over time
 
-Clean and prepare the collected data using pandas
+##  Technologies Used
 
-Display and inspect the resulting datasets
+- **Python**
+- **Jupyter Notebook**
+- **pandas**
+- **yfinance**
+- **BeautifulSoup**
+- **Requests**
+- **Plotly**
 
-Create interactive visualizations comparing stock price and revenue over time
+##  Data Collection
 
-Technologies Used
+### Stock Data
 
-Python
+Historical stock-market data was retrieved using the `yfinance` library for:
 
-Jupyter Notebook
+- **Tesla:** `TSLA`
+- **GameStop:** `GME`
 
-pandas
+The data includes historical information such as:
 
-yfinance
+- Date
+- Open price
+- High price
+- Low price
+- Closing price
+- Trading volume
 
-BeautifulSoup
+### Revenue Data
 
-requests
+Historical revenue data for Tesla and GameStop was extracted from HTML pages using:
 
-Plotly
+- `requests`
+- `BeautifulSoup`
 
-Data Collection
+The extracted data was converted into pandas DataFrames and cleaned by removing currency symbols, commas, null values, and empty entries.
 
-Stock Data
+##  Data Visualization
 
-Historical stock data is retrieved with the yfinance library for:
+The project creates dashboards for both companies showing:
 
-Tesla (TSLA)
+1. **Historical share price**
+2. **Historical revenue**
 
-GameStop (GME)
+These visualizations make it possible to examine how each company's stock performance changed alongside its revenue over time.
 
-The historical data is stored in pandas DataFrames and the index is reset to make the date available as a regular column.
+##  Repository Structure
 
-Revenue Data
+```text
+stock-revenue-data-analysis/
+│
+├── Revenue Data and Building a Dashboard.ipynb
+└── README.md
+```
 
-Historical revenue data for Tesla and GameStop is extracted from HTML pages using requests and BeautifulSoup. The extracted data is organized into DataFrames and cleaned by removing currency symbols, commas, and empty values.
+##  Running the Project
 
-Visualization
+Install the required Python libraries:
 
-The project uses Plotly to visualize:
-
-Historical stock prices
-
-Historical company revenue
-
-Separate dashboards are generated for Tesla and GameStop, allowing stock-price movements to be viewed alongside changes in revenue.
-
-Repository Contents
-
-Revenue Data and Building a Dashboard.ipynb — Jupyter Notebook containing the complete analysis
-
-README.md — Project documentation
-
-Running the Notebook
-
-Install the required Python packages:
-
+```bash
 pip install yfinance pandas requests beautifulsoup4 plotly
+```
 
-Then open the notebook in Jupyter Notebook, JupyterLab, VS Code, or another compatible environment and run the cells in order.
+Then open:
 
-Course
+```text
+Revenue Data and Building a Dashboard.ipynb
+```
 
-This project was completed as part of the IBM Data Science Professional Certificate on Coursera.
+Run the notebook cells in order to reproduce the analysis and visualizations.
+
+## 🎓 Course
+
+This project was completed as part of the **IBM Data Science Professional Certificate** on Coursera.
